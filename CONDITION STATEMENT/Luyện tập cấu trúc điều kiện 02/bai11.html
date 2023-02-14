@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    confirm("Tính thuế thu nhập cá nhân của bạn (VND):")
+    let tNCN = Number(prompt("Nhập thu nhập của bạn"))
+
+    if (tNCN <= 4000000){
+        alert("Thuế của bạn là 0%. Bạn không cần nộp thuế")
+    } else if(tNCN <= 6000000){
+        alert("Thuế của bạn là 5%. Tiền thuế của bạn là :" + (tNCN*5/100) + " VND")
+    } else if(tNCN <= 9000000){
+        alert("Thuế của bạn là 10%. Tiền thuế của bạn là :" + (tNCN*10/100) + " VND")
+    } else if(tNCN <= 14000000){
+        alert("Thuế của bạn là 15%. Tiền thuế của bạn là :" + (tNCN*15/100) + " VND")
+    } else if(tNCN <= 24000000){
+        alert("Thuế của bạn là 20%. Tiền thuế của bạn là :" + (tNCN*20/100) + " VND")
+    } else if(tNCN <= 44000000){
+        alert("Thuế của bạn là 25%. Tiền thuế của bạn là :" + (tNCN*25/100) + " VND")
+    } else if(tNCN <= 84000000){
+        alert("Thuế của bạn là 30%. Tiền thuế của bạn là :" + (tNCN*30/100) + " VND")
+    } else {
+        alert("Thuế của bạn là 35%. Tiền thuế của bạn là :" + (tNCN*35/100) + " VND")
+    }
+
+</script>
+</body>
+</html>

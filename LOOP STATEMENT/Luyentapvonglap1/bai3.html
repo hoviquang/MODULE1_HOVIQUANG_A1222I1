@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let F, F0=1 , F1=0
+    let fibonacci = F1 + ' , ' + F0
+    for(i=0;i<20;i++){
+        F = F0 + F1
+        F1 = F0
+        F0 = F
+        fibonacci = fibonacci + " , " + F0
+    }
+    document.write(fibonacci)
+
+</script>
+
+</body>
+</html>

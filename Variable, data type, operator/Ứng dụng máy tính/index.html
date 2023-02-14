@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <table border="1">
+        <tr><th colspan="4">Calculator</th></tr>
+        <tr>
+            <td colspan="2"><input type="text" id="value1" size="23"></td>
+            <td colspan="2"><input type="text" id="value2" size="23"></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="ClickneAdd()" id="+">Addition(+)</button></td>
+            <td><button type="button" onclick="ClickneSub()" id="-">Subtraction(-)</button></td>
+            <td><button type="button" onclick="ClickneMul()" id="x">Multiplication(x)</button></td>
+            <td><button type="button" onclick="ClickneDiv()" id="/">Division(/)</button></td>
+        </tr>
+        <tr><td colspan="4" id="Result">Result : </td></tr>
+    </table>
+</form>
+<script>
+    function ClickneAdd() {
+        var value1 = parseInt(document.getElementById("value1").value)
+        var value2 = parseInt(document.getElementById("value2").value)
+        var Addition = value1 + value2
+        document.getElementById("Result").innerHTML = "Result Addition: " + Addition
+    }
+
+    function ClickneSub() {
+        var value1 = parseInt(document.getElementById("value1").value)
+        var value2 = parseInt(document.getElementById("value2").value)
+        var Subtraction = value1 - value2
+        document.getElementById("Result").innerHTML = "Result Subtraction : " + Subtraction
+    }
+
+    function ClickneMul() {
+        var value1 = parseInt(document.getElementById("value1").value)
+        var value2 = parseInt(document.getElementById("value2").value)
+        var Multiplication = value1 * value2
+        document.getElementById("Result").innerHTML = "Result Multiplication : " + Multiplication
+    }
+
+    function ClickneDiv() {
+        var value1 = parseInt(document.getElementById("value1").value)
+        var value2 = parseInt(document.getElementById("value2").value)
+        var Division = value1 / value2
+        document.getElementById("Result").innerHTML = "Result Division : " + Division
+    }
+</script>
+</body>
+</html>

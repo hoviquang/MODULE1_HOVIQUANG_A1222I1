@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    confirm("Giải phương trình bậc 2 : a*(x^2)+b*x+c")
+    let a = Number(prompt("Nhập a"))
+    let b = Number(prompt("Nhập b"))
+    let c = Number(prompt("Nhập c"))
+    let denta = Math.pow(b,2)-4*a*c
+    let nghiemx1 = (-b + Math.sqrt(denta))/2*a
+    let nghiemx2 = (-b - Math.sqrt(denta))/2*a
+    if(denta < 0){
+        alert("Phương trình vô nghiệm")
+    } else if(denta = 0){
+        alert("Phương trình có nghiệm kép x1 = x2 = " + -(b/(2*a)))
+    } else {
+        alert("Phương trình có 2 nghiệm phân biệt: x1 = " + nghiemx1 + " ,x2 = " + nghiemx2 )
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    confirm("Tính số tiền hoa hồng")
+    let doanhthu = Number(prompt("Nhập doanh thu tháng này của công ty bạn (triệu):"))
+    if(doanhthu <= 100) {
+        alert("Bạn nhận được 5 % của công ty : " + doanhthu*5/100 + " Triệu")
+    } else if(doanhthu <=200){
+        alert("Bạn nhận được 10 % của công ty : " + doanhthu*10/100 + " Triệu")
+    } else {
+        alert("Bạn nhận được 15 % của công ty : " + doanhthu*15/100 + " Triệu")
+    }
+</script>
+</body>
+</html>

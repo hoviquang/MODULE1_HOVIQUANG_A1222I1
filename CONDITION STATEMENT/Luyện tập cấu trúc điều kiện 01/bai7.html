@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    confirm("Tính số cước tiền điện thoại")
+    let sophut = Number(prompt("Nhập số phút"))
+    let cuocthuebaobatbuoc = 25000
+    if(sophut > 0 && sophut <= 50){
+        alert("Tiền cước điện thoại của bạn là : " + sophut*600*0.01+cuocthuebaobatbuoc + " VND" )
+    } else if(sophut <= 50+150) {
+        alert("Tiền cước điện thoại của bạn là : " + ((50*600 + (sophut-50)*400)*0.01 +cuocthuebaobatbuoc) + " VND" )
+    } else {
+        alert("Tiền cước điện thoại của bạn là : " + ((50*600+150*400+(sophut*200))*0.01+cuocthuebaobatbuoc) + "VND")
+    }
+
+</script>
+</body>
+</html>

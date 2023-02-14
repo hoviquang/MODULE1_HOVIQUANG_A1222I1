@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td><input type="text" size="20" id="Amount"></td>
+            <td><select id="select1">
+                <option value="VND">Việt Nam Đồng(VND)</option>
+                <option value="USD">Đô La Mỹ(USD)</option>
+            </select></td>
+            <td><select id="select2">
+                <option value="USD">Đô La Mỹ(USD)</option>
+                <option value="VND">Việt Nam Đồng(VND)</option>
+            </select></td>
+            <td><button type="button" onclick="Clickne()">Convert</button></td>
+        </tr>
+        <tr>
+            <td style="color: blue" colspan="4" id="total">Total: </td>
+        </tr>
+    </table>
+</form>
+<script>
+    function Clickne() {
+        let Amount = document.getElementById("Amount").value;
+        let select1 = document.getElementById("select1").value
+        let select2 = document.getElementById("select2").value
+        let USD = Amount / 23000
+        let VND = Amount * 23000
+        let usd = Amount
+        let vnd = Amount
+
+        if (select1 == "USD" && select2 == "VND") {
+            document.getElementById("total").innerHTML ="Total: " + VND + " VND";
+        } else if (select1 =="VND" && select2 =="USD") {
+            document.getElementById("total").innerHTML ="Total: " + USD + " USD";
+        } else if (select1 =="USD" && select2 =="USD") {
+            document.getElementById("total").innerHTML ="Total: " + vnd + " USD"
+        } else {
+            document.getElementById("total").innerHTML ="Total: " + usd + " VND"
+        }
+    }
+</script>
+</body>
+</html>

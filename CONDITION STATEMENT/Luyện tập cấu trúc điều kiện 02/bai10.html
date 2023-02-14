@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    confirm("Tính tiền điện : Tiền điện = Lượng điện tiêu thụ * đơn giá điện/kWh")
+    let luongdientieuthu = Number(prompt("Nhập lượng điện tiêu thụ của nhà bạn"))
+    let dongiadien = Number(prompt("Nhập đơn giá điện (kWh)"))
+    if(dongiadien >=0 && dongiadien <= 50){
+        alert("Tiền điện của bạn là : " + luongdientieuthu * 1.484 + " VND" )
+    } else if (dongiadien <= 100) {
+        alert("Tiền điện của bạn là : " + luongdientieuthu * 1.533 + " VND" )
+    } else if(dongiadien <= 200) {
+        alert("Tiền điện của bạn là : " + luongdientieuthu * 1.786 + " VND")
+    } else if(dongiadien <= 300){
+        alert("Tiền điện của bạn là : " + luongdientieuthu * 2.242 + " VND")
+    } else if(dongiadien <= 400){
+        alert("Tiền điện của bạn là : " + luongdientieuthu * 2.503 + " VND")
+    } else if(dongiadien > 400){
+        alert("Tiền điện của bạn là : " + luongdientieuthu * 2.587 + " VND")
+    } else {
+        alert("Không có dụ đơn giá điện bé hơn không")
+    }
+
+
+</script>
+</body>
+</html>

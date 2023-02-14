@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1px">
+    <tr>
+        <th>Số tiền dự định vay </th>
+        <th>Số tháng dự định vay </th>
+    </tr>
+    <tr>
+        <td style="text-align: center">(Tối thiểu: 1 triệu đồng, Tối đa: 120 triệu đồng)</td>
+        <td style="text-align: center">(Tối thiểu: 3 tháng, Tối đa: 24 tháng)</td>
+    </tr>
+    <tr>
+        <td width="500" style="text-align: center">
+            <input id="money">
+        </td>
+        <td width="500" style="text-align: center">
+            <input id="month">
+        </td>
+    </tr>
+    <tr>
+        <td id="out" style="text-align: center"></td>
+        <td id="out2" style="text-align: center"></td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: center">
+            <button type="submit" onclick="calcMoney()">Tính tiền trả hàng tháng</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" id="out3"></td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    const rate1 = 0.15/12; //money <=20tr or month <=12th
+    const rate2 = 0.2/12;  //money <=40tr or month <=18th
+    const rate3 = 0.25/12; //money >40tr or month >18th
+    function calcMoney() {
+        let money = +document.getElementById('money').value;
+        let month = +document.getElementById('month').value;
+        document.getElementById('out').innerText = "Số tiền dự vay: " + money + " triệu đồng";
+        document.getElementById('out2').innerText = "Số tháng dự vay: " + month + " tháng";
+        if (money <= 20 || month <= 12){
+            let moneyPay1 = money*rate1/(1-Math.pow((1-rate1),month));
+            document.getElementById('out3').innerText = "Số tiền phải trả hàng tháng là: " + String(moneyPay1.toFixed(2)).slice(0) + " triệu đồng";
+        }else if (money <=40 || month <=18) {
+            let moneyPay2 = money*rate2/(1-Math.pow((1-rate2),month));
+            document.getElementById('out3').innerText = "Số tiền phải trả hàng tháng là: " + String(moneyPay2.toFixed(2)).slice(0) + " triệu đồng";
+        }else {
+            let moneyPay3 = money * rate3 / (1 - Math.pow((1 - rate3), month));
+            document.getElementById('out3').innerText = "Số tiền phải trả hàng tháng là: " + String(moneyPay3.toFixed(2)).slice(0) + " triệu đồng";
+        }
+    }
+</script>

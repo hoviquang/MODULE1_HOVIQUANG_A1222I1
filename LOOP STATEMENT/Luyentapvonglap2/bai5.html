@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sotien =parseInt(prompt("Nhập số tiền đã vay: "));
+    let sothang =parseInt(prompt("Nhập số tháng cho vay: "));
+    confirm("Bạn muốn tính lãi suất ngân hàng?Nhấn OK để tiếp tục");
+    let tienlai=0;
+    let tongtienlai=tienlai;
+    document.write("Số tiền đã vay là:" +' ' + sotien + "VNĐ cho" +' '+ sothang + " tháng với lãi suất 10%/năm" + "<br>");
+    for (let i = 0; i <sothang ; i++) {
+        tienlai=((sotien*10)/100)/12;
+        tongtienlai += tienlai;
+        sotien += tienlai;
+        document.write("Tiền lãi của tháng " + (i + 1) + " là: " + tienlai + " VNĐ <br>");
+    }
+    document.write("Tổng tiền lãi trong " + sothang + " tháng là: " + tongtienlai + "VNĐ <br>");
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    confirm("Xếp hạng học lực của bạn")
+    let diembaikiemtra = parseFloat(prompt("Nhập điểm bài kiểm tra của bạn"))
+    let diemthigiuaky = parseFloat(prompt("Nhập điểm thi giữa kỳ của bạn"))
+    let diemthicuoiky = parseFloat(prompt("Nhập điểm thi cuối kỳ của bạn"))
+    let diemtrungbinh = (diembaikiemtra + diemthicuoiky + diemthigiuaky)/3
+    if(diemtrungbinh >= 8){
+        alert("Bạn thuộc loại giỏi")
+    } else if(diemtrungbinh >= 6.5){
+        alert("Bạn thuộc loại khá")
+    } else if(diemtrungbinh >= 5){
+        alert("Bạn thuộc loại trung bình")
+    } else {
+        alert("Bạn thuộc loại yếu")
+    }
+
+
+
+</script>
+</body>
+</html>

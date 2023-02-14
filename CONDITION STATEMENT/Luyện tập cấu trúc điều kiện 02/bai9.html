@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập cạnh a của tam giác (đơn vị: cm)");
+    let b = +prompt("Nhập cạnh b của tam giác (đơn vị: cm)");
+    let c = +prompt("Nhập cạnh c của tam giác (đơn vị: cm)");
+    if (!isNaN(a)&&!isNaN(b)&&!isNaN(c)){
+        if (a>0&&b>0&&c>0&&(a+b)>c&&(a+c)>b&&(b+c)>a){
+            alert("3 cạnh có độ dài " + a + "cm, " + b + "cm, " +c + "cm là các cạnh của tam giác");
+        }else
+            alert("3 cạnh có độ dài " + a + "cm, " + b + "cm, " +c + "cm không phải là các cạnh của tam giác");
+    }else
+        alert("Cần nhập dạng số");
+</script>
+</body>
+</html>

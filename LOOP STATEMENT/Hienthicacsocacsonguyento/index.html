@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let n = 2;
+    let check;
+    let result = "";
+    while (count <= 20) {
+        check = true;
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) {
+                check = false;
+                break;
+            }
+        }
+        if (check) {
+            result += n + " ,"
+            count++;
+        }
+        n++;
+    }
+    document.write(result);
+    document.write("</br>");
+
+</script>
+</body>
+</html>

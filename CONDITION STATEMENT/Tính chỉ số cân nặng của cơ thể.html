@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <table >
+        <tr>
+            <th colspan="2">Tính chỉ số BMI</th>
+        </tr>
+        <tr>
+            <td>Weight <input type="text" id="inputWeight" value="Nhập cân nặng của bạn"></td>
+        </tr>
+        <tr>
+            <td>Height <input type="text" id="inputHeight" value="Nhập chiều cao của bạn"></td>
+            <td rowspan="2"><button type="button" onclick="clickne()">Tính chỉ số BMI</button></td>
+        </tr>
+        <tr>
+            <td id="outputBMI">Chỉ số BMI của bạn là: </td>
+        </tr>
+
+    </table>
+</form>
+<script>
+    function clickne() {
+        let inputWeight = document.getElementById("inputWeight").value;
+        let inputHeight = document.getElementById("inputHeight").value;
+        let BMI = parseInt(inputWeight / (inputHeight^2));
+
+        if(BMI >= 30){
+            document.getElementById("outputBMI").innerHTML = "Chỉ số BMI của bạn là : " + BMI +" => Bạn thuộc loại Obese"
+        } else if (BMI >= 25){
+            document.getElementById("outputBMI").innerHTML = "Chỉ số BMI của bạn là : " + BMI +" => Bạn thuộc loại OverWeight"
+        } else if (BMI >= 18.5){
+            document.getElementById("outputBMI").innerHTML = "Chỉ số BMI của bạn là : " + BMI +" => Bạn thuộc loại Normal"
+        } else {
+            document.getElementById("outputBMI").innerHTML = "Chỉ số BMI của bạn là : " + BMI +" => Bạn thuộc loại UnderWeight"
+        }
+    }
+</script>
+</body>
+</html>

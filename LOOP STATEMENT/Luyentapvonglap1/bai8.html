@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="clickne()">Bắt đầu</button>
+<button type="reset" value="Chơi lại" onclick="clickne()">Chơi lại</button>
+<script>
+    function clickne() {
+        let phamvi = Number(prompt("Số được đoán từ 0 đến :"))
+        let doan = Number(prompt("Bạn đoán số mấy?"))
+        let soRandom
+        for (i = 1; i <= 3; i++) {
+            if (phamvi) {
+                soRandom = Math.floor(Math.random() * phamvi)
+                if (soRandom == doan) {
+                    alert("Bạn đoán chính xác")
+                } else {
+                    while (soRandom != doan) {
+                        alert("Bạn đoán sai rồi. Số đúng là :" + soRandom)
+                        doan = Number(prompt("Bạn đoán số mấy?"))
+                    }
+                    alert("Bạn đoán chính xác rồi đấy")
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
