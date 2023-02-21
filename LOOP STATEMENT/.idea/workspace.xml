@@ -20,62 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92097e22-57ea-46b0-8df2-d6e4c2338882" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Câu lệnh switch-case.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 01/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 01/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 01/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 01/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 01/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 01/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 01/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 01/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 01/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 01/bai6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 01/bai7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/bai10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/bai11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/bai12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/bai6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/bai7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/bai8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Luyện tập cấu trúc điều kiện 02/bai9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Máy tính đơn giản.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CONDITION STATEMENT/Tính chỉ số cân nặng của cơ thể.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Git &amp; HTML/taoCV_canhan/.idea/taoCV_canhan.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hienthicacsocacsonguyento/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/.idea/Variable, data type, operator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/Thuchanh/.idea/Thuchanh1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/Ứng dụng chuyển đổi tiền tệ/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/Ứng dụng chuyển đổi tiền tệ/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/Ứng dụng chuyển đổi tiền tệ/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/Ứng dụng chuyển đổi tiền tệ/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/Ứng dụng chuyển đổi tiền tệ/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/Ứng dụng máy tính/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/Ứng dụng máy tính/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/Ứng dụng máy tính/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/Ứng dụng máy tính/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Variable, data type, operator/Ứng dụng máy tính/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FORM&amp;TABLE/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FORM&amp;TABLE/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Gamecode" beforeDir="false" afterPath="$PROJECT_DIR$/../Gamecode" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Git &amp; HTML/FORM&amp;TABLE/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Git &amp; HTML/taoCV_canhan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Git &amp; HTML/taoCV_canhan/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Git &amp; HTML/taoCV_canhan/taoCV.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Git &amp; HTML/taoCV_canhan/taoCV.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Luyentapvonglap2/bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Luyentapvonglap2/bai3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Variable, data type, operator/Biến,kiểu dữ liệu và toán tử" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../CODEGYM_DRAFT/MODULE1/CASE STUDY MODULE 1" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -119,6 +66,7 @@
       <updated>1676034688079</updated>
       <workItem from="1676034689161" duration="4194000" />
       <workItem from="1676287864989" duration="12349000" />
+      <workItem from="1676459321243" duration="1173000" />
     </task>
     <servers />
   </component>
@@ -135,11 +83,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1676291780043">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1676460612575">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1676291780043" />
+    <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1676460612575" />
   </component>
 </project>

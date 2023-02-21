@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V. Chương trình tìm xem V có nằm trong mảng số nguyên không? Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array"
+    let arrNum=[1,2,3,4,5,6,7,8,9,10];
+    let arrV = +prompt("Nhập số V: ");
+    let x=0;
+    for (let i = 0; i <10 ; i++) {
+        if(arrNum[i]===arrV){
+            document.write(arrV +" is in the array")
+        }else x++;
+        }
+    if (x===10){
+        document.write(arrV+ " is not in the array");
+    }
+</script>
+</body>
+</html>

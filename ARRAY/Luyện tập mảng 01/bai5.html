@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết chương trình đếm số nguyên âm trong một chuỗi
+    let arrNum= [], arrNumAm= [];
+    let n=+prompt("Nhập số phần tử có trong mảng số nguyên: ");
+    for (let i = 0; i <n ; i++) {
+        arrNum[i]=+prompt("Nhập số vào mảng số nguyên: ");
+        if (arrNum[i]<0) {
+            arrNumAm.push(arrNum[i]);
+        }
+    }
+    document.write("Mảng số là [" + arrNum + "] <br>");
+    document.write("Mảng các số âm có: "+arrNumAm.length+ " phần tử. Các số nguyên âm đó là: ["+arrNumAm+"] <br>");
+</script>
+</body>
+</html>

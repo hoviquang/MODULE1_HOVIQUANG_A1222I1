@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i,j
+    let a = +prompt("Nhập vào độ dài của mảng")
+    let array = new Array(a)
+    for(i=0;i<array.length;i++){
+        array[i] = (prompt("Nhập phần tử " + i + " của mảng"))
+    }
+    console.log(array)
+    let count = 0
+    for(j=0;j<array.length;j++){
+        if(array[j]>=0 || array[j] <0){
+            count += 1
+        }
+    }
+    alert("Số lượng kí tự số trong mảng là : " + count)
+</script>
+</body>
+</html>

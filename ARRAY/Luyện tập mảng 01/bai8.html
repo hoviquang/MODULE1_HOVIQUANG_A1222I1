@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử. Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
+    let arrNum= [];
+    for (let i = 0; i <10 ; i++) {
+        arrNum[i]= +prompt("Nhập số nguyên bất kỳ");
+    }
+    arrNum.sort(function (a,b) {
+        return b-a;
+    })
+    document.write(arrNum);
+</script>
+</body>
+</html>

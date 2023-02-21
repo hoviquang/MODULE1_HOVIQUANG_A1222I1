@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wang</title>
+</head>
+<body>
+<script>
+    //bai1
+    let film =["Action","Cartoon","Family","Horror"];
+    document.write('"'+film.join()+'"');
+
+    //bai2
+    let num = 25647782;
+    let numtostring = num.toString();
+    let result
+    result = [numtostring[0]]
+    for(let i=0;i<numtostring.length;i++){
+        if(numtostring[i] % 2 === 0 && numtostring[i+1] % 2 === 0){
+            result.push(numtostring[i] , "-")
+        } else {
+            result.push(numtostring[i])
+        }
+    }
+    alert(result.join(" "))
+
+    //bai3
+    let n = 'The Quick Brown Fox'
+    let result
+    result = []
+    for(let i = 0; i < n.length; i++){
+        if(n[i] === n[i].toUpperCase()){
+            result.push(n[i].toLowerCase())
+        } else{
+            result.push(n[i].toUpperCase())
+        }
+    }
+    alert(result.join(""))
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i,j
+    let a = +prompt("Nhập độ dài cho chuỗi")
+    let array = new Array(a)
+    for(i=0; i<array.length; i++){
+        array[i] = prompt("Nhập vào kí tự cho vị trí " + i)
+    }
+
+    for(j=0; j<array.length; j++){
+        if(array[j] === "-"){
+            array[j] = "_"
+        }
+    }
+
+    console.log(array)
+    alert(array)
+</script>
+</body>
+</html>

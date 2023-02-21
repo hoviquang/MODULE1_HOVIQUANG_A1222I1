@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <th>TỪ ĐIỂN ANH - VIỆT</th>
+        <tr>
+            <td>
+                <input type="text" id="lang">
+            </td>
+            <td>
+                <button type="submit" onclick="trans()">Tra cứu</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<p id = "out"></p>
+<script>
+    let vieDict = ["Xin chào","Tạm biệt","Hạnh phúc","Ngủ ngon","Buồn","Lười biếng"];
+    let engDict = ["hello","goodbye","happy","goodnight","sad","lazy"];
+    let j = 0;
+    function trans() {
+        let vocalbulary = document.getElementById('lang').value.toLowerCase();
+        for (let i = 0; i <engDict.length ; i++) {
+            if (vocalbulary === engDict[i]) {
+                document.getElementById('out').innerText = "Nghĩa của từ:" + vocalbulary + " là " + vieDict[i];
+            } else {
+                j++;
+                if (j !== engDict.length) {
+                    document.getElementById('out').innerText = "Không tìm thấy nghĩa của từ " + vocalbulary;
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
