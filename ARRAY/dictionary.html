@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhapvao" placeholder="hãy nhập vào từ khóa">
+<button type="button" onclick="clickNe()">Dịch</button>
+<script>
+    // function clickNe() {
+    //     let nhap = document.getElementById("nhapvao").value;
+    //     let tiengAnh = ["Hello", "Goodbye","Age","Year",""]
+    //     let tiengViet = ["Xin chào", "Tạm biệt","Tuổi","Năm"]
+    //     for(let i=0;i<tiengAnh.length;i++){
+    //         if(nhap === tiengAnh[i]){
+    //             alert(tiengViet[i])
+    //         }
+    //     }
+    // }
+    function clickNe() {
+        let nhap = document.getElementById("nhapvao").value ;
+        let tiengAnh = ["Hello","Goodbye","Age","Year","Handsome"];
+        let tiengViet = ["Xin chào","Tạm biệt","Tuổi","Năm","Đẹp trai"]
+        for (let i = 0; i <tiengAnh.length ; i++) {
+            if(nhap === tiengAnh[i]){
+                document.write(tiengViet[i])
+            }
+        }
+    }
+</script>
+</body>
+</html>
