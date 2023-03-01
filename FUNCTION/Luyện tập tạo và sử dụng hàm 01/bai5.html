@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wang</title>
+</head>
+<body>
+<script>
+    let  star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+    let  constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    function nameOfStars(name) {
+        let count
+        count = 0
+        let index
+        for (let i = 0; i < star.length; i++) {
+            if(name === star[i]){
+                count++
+                index = i
+                break
+            }
+        }
+        if(count === 1){
+            alert(constellation[index])
+        } else {
+            alert("Không tìm thấy ngôi sao này")
+        }
+    }
+
+    let name = prompt("Nhập vào tên ngôi sao để tìm chòm sao")
+    nameOfStars(name)
+</script>
+</body>
+</html>

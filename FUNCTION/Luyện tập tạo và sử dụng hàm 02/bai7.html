@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changeLocationArray(array) {
+        let a
+        a = array[0]
+        array[0] = array[1]
+        array[1] = a
+        return array
+    }
+
+    let a = new Array(2)
+    for(let i=0;i<a.length;i++){
+        a[i] = parseInt(prompt("Nhập vào số nguyên vị trí " + i))
+    }
+
+    let result = changeLocationArray(a)
+    console.log(result)
+
+
+</script>
+</body>
+</html>

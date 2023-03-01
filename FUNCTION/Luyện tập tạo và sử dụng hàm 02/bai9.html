@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let n = parseInt(prompt("Nhập độ dài của mảng: "));
+    let arr = new Array(n);
+    for (let i = 0; i <arr.length ; i++) {
+        arr[i] = prompt("Nhập vào mảng kí tự thứ : " + i);
+    }
+    let chars = prompt("Nhập kí tự: ")
+
+    function checkChars(array, character) {
+        let count = 0;
+        for (let j = 0; j <array.length ; j++) {
+            if(character === array[j]) {
+                count++;
+            }
+        }
+        if(count>0) {
+            return count;
+        }else {
+            return -1;
+        }
+
+
+    }
+
+    let result = checkChars(arr, chars);
+    document.write(result);
+
+
+
+</script>
+</body>
+</html>

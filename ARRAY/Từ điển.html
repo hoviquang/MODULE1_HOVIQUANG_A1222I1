@@ -5,34 +5,26 @@
     <title>Title</title>
 </head>
 <body>
-<form>
-    <table>
-        <th>TỪ ĐIỂN ANH - VIỆT</th>
-        <tr>
-            <td>
-                <input type="text" id="lang">
-            </td>
-            <td>
-                <button type="submit" onclick="trans()">Tra cứu</button>
-            </td>
-        </tr>
-    </table>
-</form>
-<p id = "out"></p>
+<input type="text" id="nhapvao" placeholder="hãy nhập vào từ khóa">
+<button type="button" onclick="clickNe()">Dịch</button>
 <script>
-    let vieDict = ["Xin chào","Tạm biệt","Hạnh phúc","Ngủ ngon","Buồn","Lười biếng"];
-    let engDict = ["hello","goodbye","happy","goodnight","sad","lazy"];
-    let j = 0;
-    function trans() {
-        let vocalbulary = document.getElementById('lang').value.toLowerCase();
-        for (let i = 0; i <engDict.length ; i++) {
-            if (vocalbulary === engDict[i]) {
-                document.getElementById('out').innerText = "Nghĩa của từ:" + vocalbulary + " là " + vieDict[i];
-            } else {
-                j++;
-                if (j !== engDict.length) {
-                    document.getElementById('out').innerText = "Không tìm thấy nghĩa của từ " + vocalbulary;
-                }
+    // function clickNe() {
+    //     let nhap = document.getElementById("nhapvao").value;
+    //     let tiengAnh = ["Hello", "Goodbye","Age","Year",""]
+    //     let tiengViet = ["Xin chào", "Tạm biệt","Tuổi","Năm"]
+    //     for(let i=0;i<tiengAnh.length;i++){
+    //         if(nhap === tiengAnh[i]){
+    //             alert(tiengViet[i])
+    //         }
+    //     }
+    // }
+    function clickNe() {
+        let nhap = document.getElementById("nhapvao").value ;
+        let tiengAnh = ["Hello","Goodbye","Age","Year","Handsome"];
+        let tiengViet = ["Xin chào","Tạm biệt","Tuổi","Năm","Đẹp trai"]
+        for (let i = 0; i <tiengAnh.length ; i++) {
+            if(nhap === tiengAnh[i]){
+                document.write(tiengViet[i])
             }
         }
     }

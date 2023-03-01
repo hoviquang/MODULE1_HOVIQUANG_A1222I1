@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function soNguyenDuong(num){
+        if(num % 1 === 0 && num > 0){
+            return true
+        } else {
+            return false
+        }
+
+
+    }
+    let n = Number(prompt("Nhập vào 1 số để kiểm tra có phải số nguyên dương"))
+    let result
+    result = soNguyenDuong(n)
+    alert(result)
+</script>
+</body>
+</html>

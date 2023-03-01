@@ -6,17 +6,30 @@
 </head>
 <body>
 <script>
-    let i
-    let array = prompt("Nhập các từ vào trong chuỗi: ")
-    let count
-    count = 0
-    let arr = array.split(" ")
-    for(i=0;i<arr.length;i++) {
-        if(arr[i].trim().length > 0){
-            count ++
+    //Viết một chương trình để đếm số từ trong một chuỗi
+    // let i
+    // let array = prompt("Nhập các từ vào trong chuỗi: ")
+    // let count
+    // count = 0
+    // let arr = array.split(" ")
+    // for(i=0;i<arr.length;i++) {
+    //     if(arr[i].trim().length > 0){
+    //         count ++
+    //     }
+    // }
+    // alert("Số từ trong chuỗi là " + count + " từ")
+
+    let i;
+    let array = prompt("Nhập các từ vào trong chuỗi: ");
+    let count;
+    count =0;
+    let arr = array.split(" ");
+    for (let j = 0; j <arr.length ; j++) {
+        if (arr[j].trim().length>0) {
+            count++;
         }
     }
-    alert("Số từ trong chuỗi là " + count + " từ")
+    document.write("Số từ trong chuỗi là: " +count+ "từ");
 </script>
 </body>
 </html>

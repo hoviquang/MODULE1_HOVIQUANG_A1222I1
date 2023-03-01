@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function minOfNum(num1,num2,num3){
+        if(num1<num2 && num1<num3) {
+            return num1
+        } else if(num2<num3){
+            return num2
+        } else {
+            return num3
+        }
+    }
+
+    let a = prompt("Nhập num1")
+    let b = prompt("Nhập num2")
+    let c = prompt("Nhập num3")
+    let result = minOfNum(a,b,c)
+    alert(result)
+
+</script>
+</body>
+</html>

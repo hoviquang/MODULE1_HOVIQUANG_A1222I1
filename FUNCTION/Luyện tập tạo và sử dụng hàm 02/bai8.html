@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function DaoNguoc(array) {
+        let begin = 0
+        let last = array.length -1
+        while(begin < last) {
+            let b = array[begin]
+            array[begin] = array[last]
+            array[last] = b
+            begin++
+            last--
+        }
+        return array
+    }
+
+    let sizeArray = +prompt("Nhập vào độ dài của mảng")
+    let a = new Array(sizeArray)
+    for(let i=0;i<a.length;i++) {
+        a[i] = parseInt(prompt("Nhập số nguyên vào phần tử " + i))
+    }
+
+    let result
+    result = DaoNguoc(a)
+    document.write(a);
+
+</script>
+</body>
+</html>
