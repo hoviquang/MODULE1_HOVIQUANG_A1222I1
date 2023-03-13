@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple{
+        constructor() {
+            this.weight = 10
+        }
+        decrease(){
+            if(this.weight > 0) {
+                return this.weight -= 1
+            }
+        }
+        isEmpty(){
+            if(this.weight <= 0){
+                console.log("The apple is empty")
+            } else if(this.weight === 10) {
+                console.log("The apple is full")
+            } else {
+                console.log("The apple is not empty. Now,The weight of apple is : " + this.weight )
+            }
+        }
+        getWeight(){
+            console.log("Now. The weight of apple : " + this.weight)
+        }
+
+    }
+
+    class Human{
+        constructor(name,gender,weight){
+            this.name = name
+            this.gender = gender
+            this.weight = weight
+        }
+        checkGender() {
+            if(this.gender) {
+                console.log("This is a man")
+            } else {
+                console.log("This is a woman")
+            }
+        }
+
+        setGender(gender){
+            return this.gender = gender
+        }
+
+        talk() {
+            if (this.gender) {
+                console.log("i am a man")
+            } else {
+                console.log("i am a woman")
+            }
+        }
+
+
+        eat(appleObj){
+            this.weight += 1
+            console.log("Ăn táo")
+            return appleObj.decrease()
+        }
+
+        getName(){
+            console.log(this.name)
+        }
+        setName(name){
+            return this.name = name
+        }
+
+        setWeight(Weight) {
+            return this.weight = Weight
+        }
+        getWeight(){
+            console.log(this.weight)
+        }
+
+
+
+    }
+    let human1 = new Human("Adam","man",60)
+    let human2 = new Human("Eva",'woman',50 )
+    let apple1 = new Apple()
+    human1.eat(apple1)
+
+    human2.eat(apple1)
+    console.log(apple1.getWeight())
+    human2.talk()
+
+</script>                                          
+</body>
+</html>

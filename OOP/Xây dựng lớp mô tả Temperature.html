@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doC = prompt("Nhập độ C : ");
+    while (doC < -273) {
+        doC = prompt("Nhập lại : ");
+    }
+
+    class Temperature {
+        constructor(doC) {
+            this.doC = doC;
+            this.doF;
+            this.kenvin;
+        }
+
+        getdoF() {
+            return this.doF = ((this.doC * 1.8) + 32);
+        }
+
+        getKenvin() {
+            return this.kenvin = (this.doC + 273.15);
+        }
+    }
+
+
+    let temperature = new Temperature(doC);
+    alert("ĐỘ F là: " + temperature.getdoF());
+    alert("Độ Kenvin là: " + temperature.getKenvin());
+</script>
+</body>
+</html>

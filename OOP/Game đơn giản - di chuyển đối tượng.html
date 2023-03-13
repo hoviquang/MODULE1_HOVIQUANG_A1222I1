@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id = "game"></div>
+</body>
+<script>
+
+
+    class Snake {
+        constructor(image, top, left, size, speed) {
+            this.image = image;
+            this.top = top;
+            this.left = left;
+            this.size = size;
+            this.speed = speed
+        }
+
+        getHeroElement() {
+            return '<img width="' + this.size + '"' +
+                ' height="' + this.size + '"' +
+                ' src="' + this.image + '"' +
+                ' style="top: ' + this.top + 'px; left:' + this.left + 'px;position:absolute;" />';
+        }
+
+        moveRight() {
+            this.left += this.speed;
+            console.log('ok: ' + this.left);
+        }
+
+        moveLeft() {
+            this.left -= this.speed;
+            console.log('ok: ' + this.left);
+        }
+
+        moveTop() {
+            this.top -= this.speed;
+            console.log('ok: ' + this.top);
+        }
+
+        moveBottom() {
+            this.top += this.speed;
+            console.log('ok: ' + this.top);
+        }
+
+        render() {
+            game.innerHTML = this.getHeroElement();
+        }
+    }
+
+    let snake = new Snake('rattlesnake-159135__340.webp', 20, 30, 200, 30);
+
+    function start() {
+        snake.render();
+        document.addEventListener('keydown', key => {
+            switch (key.code) {
+                case "ArrowRight":
+                    snake.moveRight();
+                    snake.render();
+                    break;
+                case "ArrowUp":
+                    snake.moveTop();
+                    snake.render();
+                    break;
+                case "ArrowLeft":
+                    snake.moveLeft();
+                    snake.render();
+                    break;
+                case "ArrowDown":
+                    snake.moveBottom();
+                    snake.render();
+                    break;
+            }
+        })
+    }
+
+    start();
+</script>
+</html>

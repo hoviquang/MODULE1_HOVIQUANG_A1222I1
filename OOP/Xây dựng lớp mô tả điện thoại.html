@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+
+    class Mobile {
+        constructor() {
+            this.battery = 100
+            this.composeMessage = []
+            this.boxMessage  = []
+            this.sendMessage = []
+            this.status = false
+        }
+
+        turnOn() {
+            this.battery -= 1
+            return this.status = true
+        }
+
+        turnOff() {
+            this.battery -= 1
+            return this.status = false
+        }
+
+        checkStatus() {
+            if (this.status) {
+                this.battery -= 1
+                return "Điện thoại đang trong trạng thái bật"
+            } else {
+                this.battery -= 1
+                return "Điện thoại đang trong trạng thái tắt"
+            }
+        }
+
+        chargeBattery() {
+            return this.battery += 20
+        }
+
+        typing(messenger) {
+            if (this.status) {
+                this.battery -= 1
+                return this.composeMessage.push(messenger)
+            } else {
+                return console.log("Vui lòng bật máy")
+            }
+        }
+
+        sendMess(mobileObj, messenger) {
+            if (this.status) {
+                this.battery -= 1
+                this.sendMessage.push(messenger)
+            } else {
+                return console.log("Vui lòng bật máy")
+            }
+        }
+
+        receiveMess(mobileObj) {
+            if (this.status) {
+                this.battery -= 1
+                this.boxMessage .push(mobileObj.sendMessage[mobileObj.sendMessage.length-1])
+            } else {
+                return console.log("Vui lòng bật máy")
+            }
+        }
+
+        viewSentMess() {
+            if (this.status) {
+                this.battery -= 1
+                console.log(this.sendMessage)
+            } else {
+                return console.log("Vui lòng bật máy")
+            }
+        }
+
+
+        viewMessBox() {
+            if (this.status) {
+                this.battery -= 1
+                console.log(this.boxMessage )
+            } else {
+                return console.log("Vui lòng bật máy")
+            }
+        }
+    }
+
+    let nokia = new Mobile()
+    let iphone = new Mobile()
+    console.log(nokia)
+    console.log(iphone)
+    nokia.turnOn()
+    iphone.turnOn()
+    nokia.sendMess(iphone, "Hồ Vĩ Quang")
+    iphone.receiveMess(nokia)
+    nokia.sendMess(iphone, "kekekeke")
+    iphone.receiveMess(nokia)
+
+
+
+
+
+
+</script>
+</body>
+</html>

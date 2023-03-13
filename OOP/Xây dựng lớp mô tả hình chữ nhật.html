@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wang</title>
+</head>
+<body>
+
+<canvas height = "300" width = "800" style = "border: 1px solid"> </canvas>
+<script>
+
+
+    class Rectangle {
+        constructor(Height,Width) {
+            this.Height = Height;
+            this.Width = Width;
+        }
+        getArea(){
+            return "Area = " + this.Height * this.Width;
+        }
+        getPerimeter(){
+            return "Perimeter = " + ((this.Height + this.Width)*2)
+        }
+    }
+
+    let height = +prompt("Nhập chiều dài: ");
+    let width = +prompt("Nhập chiều rộng: ");
+    let rectangle = new Rectangle(height,width);
+    alert("Diện tích hình chữ nhật là: " + rectangle.getArea());
+    alert("Chu vi hình chữ nhật là: " + rectangle.getPerimeter());
+
+
+
+
+</script>
+
+</body>
+</html>
