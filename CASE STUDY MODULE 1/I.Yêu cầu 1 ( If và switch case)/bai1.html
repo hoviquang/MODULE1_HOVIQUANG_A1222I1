@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wang</title>
+</head>
+<body>
+<script>
+    let luong = +(prompt("Nhập Lương :"))
+    if(luong >= 15000000 ){
+        let luong2 = luong *0.2;
+        document.write("Lương Sau Khi Trừ Thuế Là : " + luong2);
+    }
+    if(luong > 7000000 && luong <15000000 ){
+        let luong3 = luong *0.1;
+        document.write("Lương Sau Khi Trừ Thuế Là : " + luong3);
+    }
+    if(luong < 7000000 ){
+        let luong4 = luong *0.05;
+        document.write("Lương Sau Khi Trừ Thuế Là : " + luong4);
+    }
+</script>
+</body>
+</html>

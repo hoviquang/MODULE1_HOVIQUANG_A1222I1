@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let y=1;
+    for (let i = +prompt("Nhập chiều cao tam giác: "); i >0 ; i--) {
+        for (let j = 0; j < i; j++) {
+            document.write("&nbsp&nbsp");
+        }
+
+        for (let k = 0; k <y ; k++) {
+            if(i===1 || k===(y-1) || (k+y)===y||i===0 ){
+                document.write("*");
+            }else{
+                document.write("&nbsp&nbsp");
+            }
+        }
+        document.write("<br>");
+    y+=2;
+    }
+
+</script>
+</body>
+</html>
